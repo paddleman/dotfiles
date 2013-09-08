@@ -1,0 +1,22 @@
+" DJ mappings"""""""""""""
+let mapleader=","
+:nnoremap ; :
+:imap jj <Esc>
+
+
+" Move around splits with <c-hjkl>
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
+
+set cmdheight=2
+
+" Clear the search buffer when hitting return
+function! MapCR()
+  nnoremap <cr> :nohlsearch<cr>
+endfunction
+call MapCR()
+nnoremap <leader><leader> <c-^>
+
+map <leader>y "*y
